@@ -1,0 +1,17 @@
+---
+framework: "jest"
+postMerge:
+  pattern:
+    - "./test/unit/*.tsx"
+    - "./test/unit/*.ts"
+    - "./test/*.tsx"
+preMerge:
+  pattern:
+    - "./test/unit/*.tsx"
+    - "./test/unit/*.ts"
+    - "./test/*.tsx"
+preRun:
+  - yarn install
+postRun:
+  - yarn --version
+version: 2.0
